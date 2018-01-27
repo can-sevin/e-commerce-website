@@ -1,0 +1,406 @@
+<!DOCTYPE php>
+<php lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Telefon satış sistemi</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+		<!-- bootstrap -->
+		<link href="http://localhost/code/assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://localhost/code/assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+		<link href="http://localhost/code/temp/themes/css/bootstrappage.css" rel="stylesheet"/>
+
+		<!-- global styles -->
+		<link href="http://localhost/code/temp/themes/css/flexslider.css" rel="stylesheet"/>
+		<link href="http://localhost/code/temp/themes/css/main.css" rel="stylesheet"/>
+
+		<!-- scripts -->
+		<script src="http://localhost/code/temp/themes/js/jquery-1.7.2.min.js"></script>
+		<script src="http://localhost/code/assets/js/bootstrap.min.js"></script>
+		<script src="http://localhost/code/temp/themes/js/superfish.js"></script>
+		<script src="http://localhost/code/temp/themes/js/jquery.scrolltotop.js"></script>
+		<!--[if lt IE 9]>
+			<script src="http://php5shim.googlecode.com/svn/trunk/php5.js"></script>
+			<script src="http://localhost/code/temp/themes/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+    <body>
+		<div id="top-bar" class="container">
+			<div class="row">
+				<div class="span4">
+					<form method="POST" class="search_form">
+						<input type="text" class="input-block-level search-query" Placeholder="Arama çubuğu">
+					</form>
+				</div>
+				<div class="span8">
+					<div class="account pull-right">
+						<ul class="user-menu">
+							<li><a href="#">Hesabım</a></li>
+							<li><a href="cart.php">Sepet</a></li>
+							<li><a href="checkout.php">Ödeme</a></li>
+							<li><a href="register.php">Giriş</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		//container
+		<div id="wrapper" class="container">
+			<section class="navbar main-menu">
+				<div class="navbar-inner main-menu">
+					<a href="index.php" class="logo pull-left"><img src="http://localhost/code/temp/themes/images/loggo.png" class="site_logo" alt=""></a>
+					<nav id="menu" class="pull-right">
+						<ul>
+							<li><a href="http://localhost/code/application/views/products.php">Akıllı Telefon</a>
+								<ul>
+									<li><a href="http://localhost/code/application/views/products.php">Android</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">İOS</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">Windows Phone</a></li>
+								</ul>
+							</li>
+							<li><a href="http://localhost/code/application/views/products.php">Bilgisayar</a>
+							<ul>
+									<li><a href="http://localhost/code/application/views/products.php">Dizüstü</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">Masaüstü</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">All-in-One</a></li>
+							</ul>
+							</li>
+							<li><a href="http://localhost/code/application/views/products.php">Oyun Konsolu</a>
+								<ul>
+									<li><a href="http://localhost/code/application/views/products.php">Playstation</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">XBOX</a></li>
+								</ul>
+							</li>
+							<li><a href="http://localhost/code/application/views/products.php">Aksesuar</a>
+							<ul>
+									<li><a href="http://localhost/code/application/views/products.php">Telefon için</a></li>
+									<li><a href="http://localhost/code/application/views/products.php">Bilgisayar için</a></li>
+								</ul>
+							</li>
+							<li><a href="http://localhost/code/application/views/products.php">Kampanyalar</a></li>
+							<li><a href="http://localhost/code/application/views/products.php">İletişim</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+			//slider
+			<section  class="homepage-slider" id="home-slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<img src="http://localhost/code/temp/themes/images/carousel/banner1.jpg" alt="" />
+							<div class="introoo">
+								<h1>İphone</h1>
+							</div>
+						</li>
+						<li>
+							<img src="http://localhost/code/temp/themes/images/carousel/banner2.jpg" alt="" />
+							<div class="intro">
+								<h1>Efsane Geri Döndü...</h1>
+							</div>
+						</li>
+						<li>
+							<img src="http://localhost/code/temp/themes/images/carousel/banner3.jpg" alt="" />
+							<div class="introo">
+								<h1>Sadece 1.3 KG!</h1>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="header_text">
+				Daha ucuzunu bulamazsınız...
+			</section>
+			<section class="main-content">
+				<div class="row">
+					<div class="span12">
+						<div class="row">
+							<div class="span12">
+								<h4 class="title">
+									<span class="pull-left"><span class="text"><span class="line">SİZİN İÇİN <strong>ÜRÜNLERİMİZ</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel" data-slide="prev"></a><a class="right button" href="#myCarousel" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/5c.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">İphone 5c Beyaz</a><br/>
+														<a href="products.php" class="category">İOS:10,8mp,16gb</a>
+														<p class="price">700TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/5s.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">İphone 5s</a><br/>
+														<a href="products.php" class="category">İOS:11,8mp,16gb,TouchId</a>
+														<p class="price">800TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/6.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">İphone 6</a><br/>
+														<a href="products.php" class="category">İOS:11,8mp,32gb,TouchId</a>
+														<p class="price">1200TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/hp.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">HP Workstation</a><br/>
+														<a href="products.php" class="category">İntel core i7 7700K,512 Gb SSD,Win 10</a>
+														<p class="price">4000TL</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/iphone.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">İphone X</a><br/>
+														<a href="products.php" class="category">Apple'ın en iyisi</a>
+														<p class="price">Stoklarımızda Olacak</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/macc.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Macbook 2016</a><br/>
+														<a href="products.php" class="category">900 gr,i5,256 gb SSD</a>
+														<p class="price">5000 TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/mac.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Macbook(With Retina)</a><br/>
+														<a href="products.php" class="category">i7,500 GB Fusion Drive,16 Gb ram</a>
+														<p class="price">4000 TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/ürünler/mi.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Mi Notebook</a><br/>
+														<a href="products.php" class="category">i7 7500U,512 Gb SSD,8 GB RAM</a>
+														<p class="price">3000TL</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br/>
+						<div class="row">
+							<div class="span12">
+								<h4 class="title">
+									<span class="pull-left"><span class="text"><span class="line">Latest <strong>Products</strong></span></span></span>
+									<span class="pull-right">
+										<a class="left button" href="#myCarousel-2" data-slide="prev"></a><a class="right button" href="#myCarousel-2" data-slide="next"></a>
+									</span>
+								</h4>
+								<div id="myCarousel-2" class="myCarousel carousel slide">
+									<div class="carousel-inner">
+										<div class="active item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<span class="sale_tag"></span>
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/mi.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Mi Notebook</a><br/>
+														<a href="products.php" class="category">i7 7500U,512 Gb SSD,8 GB RAM</a>
+														<p class="price">3000TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/nexus.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Nexus 6p</a><br/>
+														<a href="products.php" class="category">Google sadeliği</a>
+														<p class="price">2000TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/note8.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Note 8</a><br/>
+														<a href="products.php" class="category">Samsungun en iyisi</a>
+														<p class="price">4500TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/prime.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Samsung Prime</a><br/>
+														<a href="products.php" class="category">Android 5,8 mp,8 gb</a>
+														<p class="price">500TL</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="thumbnails">
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/s7.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Samsung S7</a><br/>
+														<a href="products.php" class="category">Android 8,16 mp,32 GB</a>
+														<p class="price">2500TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/s8.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Samsung S8</a><br/>
+														<a href="products.php" class="category">Samsungun en iyisi</a>
+														<p class="price">3500TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/wp.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">Lumia 1020</a><br/>
+														<a href="products.php" class="category">41 MP</a>
+														<p class="price">2000TL</p>
+													</div>
+												</li>
+												<li class="span3">
+													<div class="product-box">
+														<p><a href="product_detail.php"><img src="http://localhost/code/temp/themes/images/son/iphone.jpg" alt="" /></a></p>
+														<a href="product_detail.php" class="title">İphone X</a><br/>
+														<a href="products.php" class="category">Apple'ın en iyisi</a>
+														<p class="price">Stoklarımızda Olacak</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row feature_box">
+							<div class="span4">
+								<div class="service">
+									<div class="responsive">
+										<img src="http://localhost/code/temp/themes/images/feature_img_2.png" alt="" />
+										<h4><strong>2 YIL GARANTİ</strong></h4>
+										<p>Ürünlerimiz 2 yıl garantili.</p>
+									</div>
+								</div>
+							</div>
+							<div class="span4">
+								<div class="service">
+									<div class="customize">
+										<img src="http://localhost/code/temp/themes/images/feature_img_1.png" alt="" />
+										<h4><strong>KARGO BEDAVA</strong></h4>
+										<p>Yurtiçi kargo ile ürünleriniz kapınıza kadar teslim.</p>
+									</div>
+								</div>
+							</div>
+							<div class="span4">
+								<div class="service">
+									<div class="support">
+										<img src="http://localhost/code/temp/themes/images/feature_img_3.png" alt="" />
+										<h4><strong>7/24 DESTEK</strong></h4>
+										<p>7/24 yanınızdayız.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our_client">
+				<h4 class="title"><span class="text">Manufactures</span></h4>
+				<div class="row">
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/14.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/35.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/1.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/2.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/3.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#"><img alt="" src="http://localhost/code/temp/themes/images/clients/4.png"></a>
+					</div>
+				</div>
+			</section>
+			//footer
+			<section id="footer-bar">
+				<div class="row">
+					<div class="span3">
+						<h4>Navigation</h4>
+						<ul class="nav">
+							<li><a href="http://localhost/code/application/views/index.php">Homepage</a></li>
+							<li><a href="http://localhost/code/application/views/about.php">About Us</a></li>
+							<li><a href="http://localhost/code/application/views/contact.php">Contact Us</a></li>
+							<li><a href="http://localhost/code/application/views/cart.php">Your Cart</a></li>
+							<li><a href="http://localhost/code/application/views/register.php">Login</a></li>
+						</ul>
+					</div>
+					<div class="span4">
+						<h4>My Account</h4>
+						<ul class="nav">
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Order History</a></li>
+							<li><a href="#">Wish List</a></li>
+							<li><a href="#">Newsletter</a></li>
+						</ul>
+					</div>
+					<div class="span5">
+						<p class="logo"><img src="http://localhost/code/temp/themes/images/logo.png" class="site_logo" alt=""></p>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. the  Lorem Ipsum has been the industry's standard dummy text ever since the you.</p>
+						<br/>
+						<span class="social_icons">
+							<a class="facebook" href="#">Facebook</a>
+							<a class="twitter" href="#">Twitter</a>
+							<a class="skype" href="#">Skype</a>
+							<a class="vimeo" href="#">Vimeo</a>
+						</span>
+					</div>
+				</div>
+			</section>
+			<section id="copyright">
+				<span>Copyright 2013 bootstrappage template  All right reserved.</span>
+			</section>
+		</div>
+		<script src="http://localhost/code/temp/themes/js/common.js"></script>
+		<script src="http://localhost/code/temp/themes/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).ready(function() {
+					$('.flexslider').flexslider({
+						animation: "fade",
+						slideshowSpeed: 4000,
+						animationSpeed: 600,
+						controlNav: false,
+						directionNav: true,
+						controlsContainer: ".flex-container" // the container that holds the flexslider
+					});
+				});
+			});
+		</script>
+    </body>
+</php>
